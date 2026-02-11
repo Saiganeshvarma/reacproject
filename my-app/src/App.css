@@ -1,42 +1,66 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
-}
-
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
-}
-
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
+body {
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+    background: linear-gradient(135deg, #1e1e2f, #2c2c54);
+    color: white;
   }
-  to {
-    transform: rotate(360deg);
+  
+  .app {
+    padding: 30px;
   }
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
+  
+  .title {
+    text-align: center;
+    font-size: 42px;
+    font-weight: 600;
+    margin-bottom: 20px;
   }
-}
-
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
-}
+  
+  .search {
+    display: block;
+    margin: 0 auto 40px auto;
+    padding: 12px 20px;
+    width: 50%;
+    border-radius: 30px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+  }
+  
+  .products {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+    gap: 25px;
+  }
+  
+  .card {
+    background: #2f2f4f;
+    padding: 20px;
+    border-radius: 18px;
+    text-align: center;
+    transition: 0.3s;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+  }
+  
+  .card:hover {
+    transform: translateY(-8px);
+  }
+  
+  .card img {
+    height: 160px;
+    object-fit: contain;
+    margin-bottom: 15px;
+  }
+  
+  .price {
+    font-weight: bold;
+    margin: 10px 0;
+    color: #00ffcc;
+    font-size: 18px;
+  }
+  
+  .category {
+    font-size: 14px;
+    color: #aaa;
+  }
+  
